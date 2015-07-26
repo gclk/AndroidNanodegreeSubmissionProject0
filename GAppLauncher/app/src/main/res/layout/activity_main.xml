@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gncTitleText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Nanodegree Apps Launcher" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/gncButtonStreamer"
+        android:layout_marginTop="41dp"
+        android:backgroundTint="#F08C35"
+        android:onClick="sendMessageToUser"
+        android:layout_below="@+id/gncTitleText"
+        android:layout_alignLeft="@+id/gncButtonXYZ"
+        android:layout_alignStart="@+id/gncButtonXYZ" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/gncButtonScores"
+        android:backgroundTint="#F08C35"
+        android:onClick="sendMessageToUser"
+        android:layout_below="@+id/gncButtonStreamer"
+        android:layout_alignLeft="@+id/gncButtonStreamer"
+        android:layout_alignStart="@+id/gncButtonStreamer" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/gncButtonLibrary"
+        android:backgroundTint="#F08C35"
+        android:layout_below="@+id/gncButtonScores"
+        android:layout_alignLeft="@+id/gncButtonScores"
+        android:layout_alignStart="@+id/gncButtonScores"
+        android:onClick="sendMessageToUser"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Build It Bigger"
+        android:id="@+id/gncButtonBigger"
+        android:backgroundTint="#F08C35"
+        android:onClick="sendMessageToUser"
+        android:layout_below="@+id/gncButtonLibrary"
+        android:layout_alignLeft="@+id/gncButtonXYZ"
+        android:layout_alignStart="@+id/gncButtonXYZ" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/gncButtonXYZ"
+        android:backgroundTint="#F08C35"
+        android:onClick="sendMessageToUser"
+        android:layout_below="@+id/gncButtonBigger"
+        android:layout_alignLeft="@+id/gncButtonCapstone"
+        android:layout_alignStart="@+id/gncButtonCapstone" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Capstone - My App"
+        android:id="@+id/gncButtonCapstone"
+        android:backgroundTint="#0505FF"
+        android:textColor="#FFFFFF"
+        android:onClick="sendMessageToUser"
+        android:layout_below="@+id/gncButtonXYZ"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
