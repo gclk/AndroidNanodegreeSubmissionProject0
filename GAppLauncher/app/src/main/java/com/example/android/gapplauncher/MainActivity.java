@@ -11,6 +11,9 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
+    // Toast for pop up message to user
+    private Toast popUpMsg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +32,15 @@ public class MainActivity extends ActionBarActivity {
 
         //int msgText = view.getId();
         int duration = Toast.LENGTH_SHORT;
-        Context gncContext = getApplicationContext();
+        //maybe don't need, can just use 'this'.  Context gncContext = getApplicationContext();
         CharSequence textForToast = getResources().getResourceEntryName(view.getId());
 
-        Toast popUpMsg = Toast.makeText(gncContext, "You've pressed this button: " + textForToast, duration);
+        //If a toast is already displayed from a previous press, cancel it
+        if(popUpMsg != null)
+        {
+            popUpMsg.cancel();
+        }
+        popUpMsg = Toast.makeText(this, "You've pressed this button: " + textForToast, duration);
         popUpMsg.show();
 
         /*

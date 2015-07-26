@@ -5,3 +5,21 @@
 .DS_Store
 /build
 /captures
+
+#gnc addeds below, taking most from baudm github collaborated entry...
+#generated files
+bin/
+gen/
+
+#.class Java class files
+*.class
+
+#gradle files
+.gradle/
+build/
+
+#log files
+*.log
+
+#local config file for sdk path etc...
+local.properties

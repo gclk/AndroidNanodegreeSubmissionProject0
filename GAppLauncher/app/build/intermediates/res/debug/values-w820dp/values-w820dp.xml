@@ -3,4 +3,5 @@
     <!-- From: file:/C:/Users/georgeclerk/AndroidStudioProjects/GAppLauncher/app/src/main/res/values-w820dp/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="gncButtonWidth">160dp</dimen>
 </resources>
